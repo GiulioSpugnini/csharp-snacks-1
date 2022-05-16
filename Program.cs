@@ -161,3 +161,17 @@ var vret = listOfInt.ToArray();
 foreach (int i in vret)
     Console.Write("{0} ", i);
 Console.WriteLine();
+
+//Dato un vettore di interi, costruito con numeri casuali, calcolare la media dei valori
+//Il vettore deve contenere 1000 elementi
+int[] randomNumber= new int[1000];
+int tot=0;
+foreach (int i in randomNumber)
+{
+    Random rand = new Random();
+    randomNumber[i] = rand.Next();
+    tot += randomNumber[i];
+    Console.WriteLine(randomNumber[i]);
+}
+int media = tot / 1000;
+Console.WriteLine("La media di tutti i numeri e: {0}", media);
